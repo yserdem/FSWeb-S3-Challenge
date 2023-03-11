@@ -3,48 +3,135 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
@@ -63,7 +150,15 @@ body {
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, i {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+i {
     text-decoration: none;
 
 }
@@ -85,12 +180,15 @@ h3 {
     color: white;
 }
 
-p, a {
+p,
+a {
     font-size: 3rem;
     color: white;
 }
 
-a {padding: 15px;}
+a {
+    padding: 15px;
+}
 
 /* header section */
 header {
@@ -101,17 +199,20 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .navigation {
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(0, 4, 17, .8);
 }
+
 /* spacers */
 .spacer {
     width: 100%;
     height: 20vh;
     background-color: rgb(0, 4, 17);
 }
+
 .spacer-sm {
     width: 100%;
     height: 10vh;
@@ -121,7 +222,7 @@ header {
 /* gallery section */
 .gallery {
     width: 100%;
-    height: 100vh;
+    height: fit-content;
     text-align: center;
     background-color: rgb(0, 4, 17);
 }
@@ -129,14 +230,14 @@ header {
 .imgContainer {
     display: flex;
     flex-wrap: wrap;
-    margin: 1% 10%;
+    margin: 0% 10%;
     gap: 4rem;
 }
 
 /* about us section */
 .about {
     width: 100%;
-    height: 75vh;
+    height: fit-content;
     text-align: center;
     background-image: url("../img/staff-cooks.jpg");
     background-size: cover;
@@ -151,6 +252,10 @@ header {
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 4, 17, .8);
+}
+
+.text {
+    padding: 20vh 0vh;
 }
 
 .about h2 {
@@ -239,47 +344,72 @@ footer {
 
 /* mobile media query */
 @media (max-width: 428px) {
+
     /* header section */
-    
+    html {
+        max-width: 428px;
+        min-width: 200px;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    a {
+        padding: 0px;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
 
     /* gallery section */
     .gallery {
         height: auto;
     }
-    
+
     /* about us section */
 
     .about {
         height: 200vh;
     }
-    
+
     .about h2 {
         width: 100%;
         padding-top: 5vh;
     }
-    
+
     .about-container .text {
         width: 85%;
     }
-    
+
     /* contact us section */
     .contact h3 {
         padding-top: 2.5vh;
     }
-    
+
     .info {
         flex-wrap: wrap;
     }
-    
+
     .address {
         width: 100%;
         padding-bottom: 2.5vh;
     }
-    
+
     .hours {
         width: 100%;
     }
-    
+
     .contacts {
         width: 100%;
         padding-bottom: 2.5vh;
@@ -287,8 +417,12 @@ footer {
 
     /* footer section */
     footer {
+        flex-direction: column;
+        align-items: center;
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
     }
+
+
 }
