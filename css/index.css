@@ -424,5 +424,20 @@ footer {
         font-size: 2rem;
     }
 
+    .emailsignup {
+        width: 90%;
+    }
+
+    .email-input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copyright {
+        padding: 0;
+        width: 100%;
+        font-size: 2.5vw;
+        text-align: center;
+    }
 
 }
