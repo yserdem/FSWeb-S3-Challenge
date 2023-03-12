@@ -348,11 +348,12 @@ footer {
     /* header section */
     html {
         max-width: 428px;
-        min-width: 200px;
+        min-width: 100px;
     }
 
     .header {
         height: auto;
+        margin: 0 auto;
     }
 
     img {
@@ -364,7 +365,8 @@ footer {
     }
 
     h1 {
-        font-size: 5rem;
+        font-size: 4rem;
+        padding: 10% 15%;
     }
 
     .navigation {
