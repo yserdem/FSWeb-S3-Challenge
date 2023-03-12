@@ -141,6 +141,7 @@ table {
 html {
     max-width: 1920px;
     min-width: 428px;
+    width: 100%;
     font-size: 62.5%;
 }
 
@@ -186,7 +187,7 @@ a {
 }
 
 a {
-    padding: 3rem;
+    padding: 15px;
 }
 
 /* header section */
